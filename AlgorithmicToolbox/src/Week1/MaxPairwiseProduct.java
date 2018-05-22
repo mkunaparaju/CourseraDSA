@@ -24,15 +24,14 @@ public class MaxPairwiseProduct {
     static long getMaxPairwiseNaive(int [] numbers )    {
         int result = 0;
         int n = numbers.length;
-        for (int i = 0; i < n; ++i) `+9
+        for (int i = 0; i < n; ++i)
             for (int j = i + 1; j < n; ++j) {
                 if (numbers[i] * numbers[j] > result) {
                     result = numbers[i] * numbers[j];
                 }
             }
-        }
         return result;
-    }
+        }
 
     static void stressTest(int n, int m)    {
        while(true) {
